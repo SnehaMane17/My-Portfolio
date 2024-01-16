@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 
+document.body.style.backgroundColor = '#121d36'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

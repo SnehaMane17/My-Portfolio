@@ -1,10 +1,11 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import { About } from './components/Navbar/pages/About'
-import { Project } from './components/Navbar/pages/Project'
-import { Resume } from './components/Navbar/pages/Resume'
-import { Home } from './components/Navbar/pages/Home';
+import { About } from './components/Navbar/pages/About/About'
+import { Project } from './components/Navbar/pages/Projects/Project'
+import { Resume } from './components/Navbar/pages/Resume/Resume'
+import { Home } from './components/Navbar/pages/Home/Home';
 import  Footer  from './components/Footer/Footer';
 
 function App() {
