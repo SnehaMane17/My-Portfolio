@@ -1,5 +1,5 @@
 .active {
-    background-color: purple
+    background-color: #800080
 }
 
 nav{
@@ -16,7 +16,7 @@ nav .title{
     margin: 1rem;
     font-weight: bold;
     text-decoration: none;
-    color: #800080;
+    color: #fff;
    
 }
 
