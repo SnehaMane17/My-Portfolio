@@ -37,7 +37,7 @@ function TechStack() {
   return (
     <Row className="justify-content-center align-items-center" style={{ paddingBottom: "50px" }}>
       {techIcons.map(({icon, name}, index) => (
-        <Col key={index} xs={4} md={2} className="mb-3" >
+        <Col key={index} xs={6} md={3} className="mb-3" >
           <Card className="text-center p-3 tech-card" >
             <Card.Body style={{ fontSize: "4em", color: 'white'  }}>
               {icon}
