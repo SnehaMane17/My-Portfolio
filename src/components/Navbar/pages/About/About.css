@@ -16,24 +16,27 @@ div h2{
     color: white;
 }
 
-.tech-card {
-    transition: transform 0.3s;
-    width: 100%;
-    background-color: #121d36;
-    border: 2px solid #800080;
-  }
-  
-.tech-card:hover {
-    transform: scale(1.1); 
-  }
-
+.tech-card,
 .tool-card {
     transition: transform 0.3s;
     width: 100%;
     background-color: #121d36;
     border: 2px solid #800080;
-  }
-  
+}
+
+.tech-card:hover,
 .tool-card:hover {
-    transform: scale(1.1); 
-  }
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 40px;
+    }
+
+    .tech-card,
+    .tool-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
