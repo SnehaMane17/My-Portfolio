@@ -1,108 +1,134 @@
-import React from 'react'
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import './Home.css'
+import photo  from'../../../../assests/IMG-20230818-WA0036.jpg'
+import {
+  AiFillGithub,
+  AiOutlineTwitter,
+  AiFillInstagram,
+} from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 
 export const Home = () => {
   return (
-    <div>
-    <div>
-      
-Certainly! Here's a long plain text passage for you:
+    <section>
+      <Container fluid className="home-section" id="home">
+          <Row>
+            <Col md={7} className="home-header">
+              <h1 style={{ paddingBottom: 15 }} className="heading">
+                Hi There!{" "}
+                <span className="wave" role="img" aria-labelledby="wave">
+                  👋🏻
+                </span>
+              </h1>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+              <h1 className="heading-name">
+                I'M
+                <strong className="main-name">    Sneha Marathe </strong>
+              </h1>
 
-Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa.
+              <h1 className="profile-name">
+                Fullstack Developer
+              </h1>
+            </Col>
 
-Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            <Col md={5} style={{ paddingBottom: 20 }}>
+              <div style={{ borderRadius: "50%", overflow: "hidden", width: "450px", height: "450px" }}>
+                <img
+                  src={photo}
+                  alt="home pic"
+                  className="img-fluid"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  />
+              </div>
+           
+            </Col>
+          </Row>
 
-Etiam neque. Integer dolor. Vestibulum dapibus nunc ac augue. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing.
-
-Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus.
-
-Feel free to let me know if you need anything specific or if you have any other requests
-
-
-      
-    </div>
-    <br/>
-    <div>
-      
-      Certainly! Here's a long plain text passage for you:
-      
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-      
-      Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa.
-      
-      Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-      
-      Etiam neque. Integer dolor. Vestibulum dapibus nunc ac augue. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing.
-      
-      Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus.
-      
-      Feel free to let me know if you need anything specific or if you have any other requests
-      
-      
+          <Row>
+          <Col md={8} className="home-about-description">
+            <h1 style={{ fontSize: "2.6em" }}>
+              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+            </h1>
+            <p className="home-about-body">
+             I'm web developer with the 3 years of experiance inheriting strong foundation
+             in backend and frontend technologies.
+              <br />
+              <br />I am fluent in 
+              <i>
+                <b className="purple">  Javascript and ReactJS </b>
+              </i>
+              <br />
+              <br />
+             Proven track record of &nbsp;
+              <i>
+                <b className="purple">Web design </b> and
+                {" "}
+                <b className="purple">
+                  Developmemt.
+                </b>
+              </i>
+              <br />
+              <br />
+             Experianced in collborating with cross functional teams.
+            </p>
+          </Col>
+          <Col md={4} className="myAvtar">
             
-          </div>
-          <br/>
-          <div>
-      
-      Certainly! Here's a long plain text passage for you:
-      
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-      
-      Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa.
-      
-      Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-      
-      Etiam neque. Integer dolor. Vestibulum dapibus nunc ac augue. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing.
-      
-      Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus.
-      
-      Feel free to let me know if you need anything specific or if you have any other requests
-      
-      
-            
-          </div>
-          <br/>
-          <div>
-      
-      Certainly! Here's a long plain text passage for you:
-      
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-      
-      Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa.
-      
-      Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-      
-      Etiam neque. Integer dolor. Vestibulum dapibus nunc ac augue. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing.
-      
-      Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus.
-      
-      Feel free to let me know if you need anything specific or if you have any other requests
-      
-      
-            
-          </div>
-          <br/>
-          <div>
-      
-      Certainly! Here's a long plain text passage for you:
-      
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-      
-      Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa.
-      
-      Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-      
-      Etiam neque. Integer dolor. Vestibulum dapibus nunc ac augue. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing.
-      
-      Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus.
-      
-      Feel free to let me know if you need anything specific or if you have any other requests
-      
-      
-            
-          </div>
-          <br/>
-    </div>
+          </Col>
+          </Row>
+          <Row>
+          <Col md={12} className="home-about-social">
+            <h1>FIND ME ON</h1>
+            <p>
+              Feel free to <span className="purple">connect </span>with me
+            </p>
+            <ul className="home-about-social-links">
+              <li className="social-icons">
+                <a
+                  href="https://github.com/SnehaMane17"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiFillGithub />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://twitter.com/Soumyajit4419"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiOutlineTwitter />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.instagram.com/soumyajit4419"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiFillInstagram />
+                </a>
+              </li>
+            </ul>
+          </Col>
+        </Row>
+         
+        </Container>
+    </section>
   )
 }
