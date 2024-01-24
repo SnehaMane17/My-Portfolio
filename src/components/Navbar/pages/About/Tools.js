@@ -10,7 +10,7 @@ import {
 
 function Tools() {
     const toolsIcon = [
-        { icon: <SiVisualstudiocode />, name: 'Visual Studio Code' },
+        { icon: <SiVisualstudiocode />, name: 'VS Code' },
         { icon: <SiPostman />, name: 'Postman' },
         { icon: <SiGithub />, name: 'Github' },
         { icon: <SiWebpack />, name: 'Webpack' },
