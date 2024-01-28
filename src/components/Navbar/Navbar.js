@@ -7,7 +7,7 @@ const Navbar = () =>{
     const [menuOpen, setMenuOpen] = useState(false)
     return(
         <nav>
-             <Link to='/Home' className="title">
+             <Link to='/home' className="title">
                     SM
             </Link>
             <div className="menu" onClick={()=>{setMenuOpen(!menuOpen) }}>
@@ -17,13 +17,16 @@ const Navbar = () =>{
             </div>
             <ul className={menuOpen ? 'open' : ''}>
                <li>
-                    <NavLink to='/About'> About </NavLink>
+                    <NavLink to='/home'> Home </NavLink>
                </li>
                <li>
-                    <NavLink to='/Project'> Project </NavLink>
+                    <NavLink to='/about'> About </NavLink>
                </li>
                <li>
-                    <NavLink to='/Resume'> Resume </NavLink>
+                    <NavLink to='/project'> Project </NavLink>
+               </li>
+               <li>
+                    <NavLink to='/resume'> Resume </NavLink>
                </li>
              
             </ul>
