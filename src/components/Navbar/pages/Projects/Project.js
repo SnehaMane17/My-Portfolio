@@ -24,6 +24,12 @@ export const Project = () => {
     fetchRepos();
   }, []);
 
+  const formatRepoName = (name) => { 
+    const parts = name.split(/[-_]/); 
+    const formattedName = parts.map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(' ');
+    return formattedName;
+};
+
   return (
     <div className="container">
       <h2 className="project-name">My GitHub Repositories</h2>
@@ -32,7 +38,7 @@ export const Project = () => {
           <Col key={repo.id} lg={4} className="mb-4">
             <Card className="project-card">
               <Card.Body>
-                <Card.Title className="repo-name">{repo.name}</Card.Title>
+                <Card.Title className="repo-name">{formatRepoName(repo.name)}</Card.Title>
                 <Card.Text>{repo.description}</Card.Text>
                 <Card.Link href={repo.html_url} target="_blank" rel="noopener noreferrer">
                   View on GitHub

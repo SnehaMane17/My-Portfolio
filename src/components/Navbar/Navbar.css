@@ -9,7 +9,11 @@ nav{
     background-color: #0f172a;
     position: sticky;
     top: 0;
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    z-index: 1000; /* Ensure navbar is on top */
 }
+
+
 
 nav .title{
     font-size: 1.5rem;
@@ -17,12 +21,12 @@ nav .title{
     font-weight: bold;
     text-decoration: none;
     color: #fff;
-   
+    
 }
 
 nav ul {
     display: flex;
-
+    margin-top: 0.5rem;
 }
 
 nav ul li {
