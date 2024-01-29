@@ -10,11 +10,9 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 export const Resume = () => {
 
-    const width = window.innerWidth;
-
     return (
         <div>
-        <Container className="resume-section" style={{ padding: "20px 0", overflow: "hidden" }} >
+        <Container className="resume-section" style={{ padding: "20px 0", overflowX: "hidden" }} >
           <Row style={{ justifyContent: "center", position: "relative" }}>
             <Button
               variant="primary"
@@ -29,7 +27,7 @@ export const Resume = () => {
   
           <Row className="resume" style={{marginTop: '20px'}}>
             <Document file={pdf} className="d-flex justify-content-center">
-              <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+              <Page pageNumber={1}  />
             </Document>
           </Row>        
         </Container>
